@@ -1,16 +1,73 @@
-# React + Vite
+# React Developer Tools Checkpoint
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
 
-Currently, two official plugins are available:
+This project was created to practice debugging React applications using React Developer Tools. The application was built with React and Vite and includes reusable components, props, and state management.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+# What I Built
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+I created a simple React application that contains:
 
-## Expanding the ESLint configuration
+- A counter using React state
+- Reusable UserCard components
+- Props passed between components
+- Interactive button functionality
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+# Tools Used
+
+- React
+- Vite
+- React Developer Tools
+- Visual Studio Code
+- Google Chrome
+
+---
+
+# Debugging Process
+
+I used React Developer Tools to inspect the React component tree and analyze component props and state.
+
+I inspected the UserCard components and discovered that one component was missing the age prop.
+
+Incorrect code:
+
+jsx <UserCard name="Sarah" /> 
+
+Because the age prop was missing, the component could not display the correct information.
+
+I fixed the issue by updating the component:
+
+jsx <UserCard name="Sarah" age={30} /> 
+
+After fixing the issue, the component rendered correctly.
+
+---
+
+# State Inspection
+
+I also inspected the count state in the App component using React Developer Tools.
+
+The counter updated correctly when clicking the button.
+
+---
+
+# What I Learned
+
+Through this project, I learned:
+
+- How to install and use React Developer Tools
+- How to inspect React components
+- How to inspect props and state
+- How to identify missing props
+- How to debug React applications
+- How React state updates work
+
+---
+
+# Conclusion
+
+The project was successfully debugged using React Developer Tools. All issues were identified and fixed successfully, and the application works correctly.
